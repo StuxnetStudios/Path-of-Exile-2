@@ -1,0 +1,92 @@
+# =========================
+# 🔁 TOGGLE BLOCK
+# =========================
+# Uncomment ONE of the following to activate mode
+# EnableFarmingMode
+# EnableBossingMode
+
+# =========================
+# 💰 CURRENCY (Always Shown)
+# =========================
+Show
+  Class "Currency"
+  Rarity "Normal" "Magic" "Rare" "Unique"
+  SetBorderColor 255 215 0 255
+  SetBackgroundColor 40 40 0 220
+  PlayAlertSound 5 300
+
+# =========================
+# 🔷 DJINN BARYA TOKENS
+# =========================
+Show
+  BaseType "Djinn Barya"
+  SetBorderColor 180 0 180 255
+  SetBackgroundColor 60 0 60 200
+  PlayAlertSound 4 275
+
+# =========================
+# 🔁 FARMING MODE BLOCK
+# =========================
+#IF EnableFarmingMode
+
+# 🧤 Slotted Gear for Destruction
+Show
+  Class "Armor" "Weapon"
+  SocketGroup "!"""""
+  Rarity "Normal" "Magic"
+  SetBorderColor 100 100 255 200
+  SetBackgroundColor 20 20 60 180
+  PlayAlertSound 2 200
+
+# 🧙 Witch-Class Drops
+Show
+  Class "Armor" "Weapon"
+  BaseType "Witch Hat" "Witch Robe" "Witch Gloves" "Witch Boots" "Witch Wand" "Witch Scepter"
+  Rarity "Magic" "Rare" "Unique"
+  SetBorderColor 180 0 180 255
+  SetBackgroundColor 60 0 60 200
+  PlayAlertSound 4 275
+
+# ✅ Equippable Upgrades
+Show
+  Class "Armor" "Weapon"
+  Rarity "Rare" "Unique"
+  SocketGroup "!"""""
+  HasMod "Upgradeable"
+  SetBorderColor 0 255 0 255
+  SetBackgroundColor 0 60 0 200
+  PlayAlertSound 3 250
+
+#ENDIF
+
+# =========================
+# 🔁 BOSSING MODE BLOCK
+# =========================
+#IF EnableBossingMode
+
+# 🎯 Trial Keys and Relics
+Show
+  BaseType "Djinn Barya" "Relic" "Trial Key"
+  SetBorderColor 255 0 100 255
+  SetBackgroundColor 50 0 20 200
+  PlayAlertSound 6 300
+
+# 🧙 Witch-Class Upgrades
+Show
+  Class "Armor" "Weapon"
+  BaseType "Witch Hat" "Witch Robe" "Witch Gloves" "Witch Boots" "Witch Wand" "Witch Scepter"
+  Rarity "Rare" "Unique"
+  HasMod "Upgradeable"
+  SetBorderColor 0 255 255 255
+  SetBackgroundColor 0 60 60 200
+  PlayAlertSound 3 250
+
+#ENDIF
+
+# =========================
+# 🔒 HIDE EVERYTHING ELSE
+# =========================
+Hide
+  Class "Armor" "Weapon" "Accessory" "Flask" "Gem" "Map" "Jewels"
+  Rarity "Normal" "Magic" "Rare"
+  SocketGroup ""  # No sockets
